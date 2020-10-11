@@ -1,7 +1,7 @@
 # UsefulProgram
 Test project for Lua 5.3
 # Basics
-Step 1. Install Lua 5.3 on your computer.
+Step 1. Install Lua 5.3 on your computer. You can Lua at https://www.lua.org/download.html
 Step 2. Make a folder with both files inside.
 Step 3. Go to Terminal/Command Prompt and type: lua (directory here of UsefulProgram.lua)
 Step 4. Have fun.
