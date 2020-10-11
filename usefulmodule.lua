@@ -1,23 +1,26 @@
-usefulmodule = {}
+--[ Useful Program Math Module ]--
 
-usefulmodule.function add(n1,n2)
-	print(n1 + n2)
+
+mathmodule = {} -- Table
+
+function mathmodule.add(n1,n2) -- All of these are the math functions.
+    print("Answer is "..n1 + n2)
 end
 
-usefulmodule.function sub(n1,n2)
-	print(n1 - n2)
+function mathmodule.sub(n1,n2)
+    print("Answer is "..n1 - n2)
 end
 
-usefulmodule.function mul(n1,n2)
-	print(n1 * n2)
+function mathmodule.mul(n1,n2)
+    print("Answer is "..n1 * n2)
 end
 
-usefulmodule.function div(n1,n2)
-	print(n1 / n2)
+function mathmodule.div(n1,n2)
+    print("Answer is "..n1 / n2)
 end
 
-usefulmodule.function pow(n1,n2)
-	print(n1 ^ n2)
+function mathmodule.pow(n1,n2)
+    print("Answer is "..n1 ^ n2)
 end
 
-return usefulmodule
+return mathmodule
