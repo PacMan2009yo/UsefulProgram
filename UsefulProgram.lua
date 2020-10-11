@@ -1,44 +1,59 @@
-local UsefulModule = require("usefulmodule")
-print("1 for Calculator. 2 for Timer. Please type.")
-local read = io.read() -- Allows you to type.
+    --[ Useful Program by PacMan2009yo ]--
 
 
-if read == "1" then
-	local read2 = io.read()
-	print("Calculator: 1 for addition. 2 for subtraction. 3 for division. 4 for multiplication. 5 for power.")
-	if read2 == "1" then
-		local adds = io.read()
-		print("Enter first number")
-		local adds2 = io.read()
-		print("Enter second number")
-		UsefulModule.add(adds,adds2)
-	elseif read2 == "2" then
-		local subs = io.read()
-		print("Enter first number")
-		local subs2 = io.read()
-		print("Enter second number")
-		UsefulModule.sub(subs,subs2)
-	elseif read2 == "3" then
-		local divs = io.read()
-		print("Enter first number")
-		local divs2 = io.read()
-		print("Enter second number")
-		UsefulModule.div(divs,divs2)
-	
-	elseif  read2 == "4" then
-		local mul1 =  io.read()
-		print("Enter first number")
-		local mul2 = io.read()
-		print("Enter second number")
-		UsefulModule.mul(mul1,mul2)
-	else
-		local pow1 = io.read()
-		print("Enter first number")
-		local pow2 = io.read()
-		print("Enter second number")
-		UsefulModule.pow(pow1,pow2)
-	
-	end
-end
-		
+    m = require("MathModule") -- Gets math module
+    print("Hello, what is your name?")
+    local name = io.read()
+    print("Okay, "..name..". Would you like to use the calculator or the timer? 1 for calculator 2 for timer.")
+    local answer = io.read()
+    if answer == "1" then -- If statement for answer
+        print("Please choose by typing the number. 1 for addition, 2 for subtraction, 3 for multiplication, 4 for division, and 5 for power.")
+        choose = io.read()
+        if choose == "1" then -- Math if statements
+            print("Enter first number.")
+            an1 = io.read()
+            print("Enter second number.")
+            an2 = io.read()
+            m.add(an1,an2)
+        elseif choose == "2" then
+            print("Enter first number.")
+            an1 = io.read()
+            print("Enter second number.")
+            an2 = io.read()
+            m.sub(an1,an2)
+        elseif choose == "3" then
+            print("Enter first number.")
+            an1 = io.read()
+            print("Enter second number.")
+            an2 = io.read()
+            m.mul(an1,an2)
+        elseif choose == "4" then
+            print("Enter first number.")
+            an1 = io.read()
+            print("Enter second number.")
+            an2 = io.read()
+            m.div(an1,an2)
+        else
+            print("Enter first number.")
+            an1 = io.read()
+            print("Enter second number.")
+            an2 = io.read()
+            m.pow(an1,an2)
+        end
+    elseif answer == "2" then -- elseif for if you type 2 instead of 1
+        function wait(sec) -- A simple wait function
+            time = os.time()
+            repeat until os.time() > time + sec
+        end
 
+        print("How many seconds will this timer go for?")
+        number = 0
+        local seconds = io.read("*n")
+        print("Timer started.")
+        for i = 0,seconds - 1 do -- Timer script
+            number = number + 1
+            wait(0.9)
+            print(number)
+        end
+        print("Timer complete.")
+    end
