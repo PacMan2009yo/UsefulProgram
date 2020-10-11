@@ -1,7 +1,7 @@
     --[ Useful Program by PacMan2009yo ]--
 
 
-    m = require("MathModule") -- Gets math module
+    m = require("UsefulModule") -- Gets math module
     print("Hello, what is your name?")
     local name = io.read()
     print("Okay, "..name..". Would you like to use the calculator or the timer? 1 for calculator 2 for timer.")
