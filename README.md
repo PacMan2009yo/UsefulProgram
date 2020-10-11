@@ -7,5 +7,5 @@ Step 3. Go to Terminal/Command Prompt and type: lua (directory here of UsefulPro
 Step 4. Have fun.
 # Why do I need this?
 This is a project for people who are beginners at learning Lua.
-This project uses basic functions, a basic maodule, and everything else is basic.
+This project uses basic functions, a basic module, and everything else is basic.
 Also, I included comments to help you understand important code.
